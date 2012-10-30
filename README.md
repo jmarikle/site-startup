@@ -45,4 +45,4 @@ Closure Compiler is a JavaScript optimizing compiler. It parses your JavaScript,
 
 ### Everything else:
 
-The Unlicense (aka: public domain)
+CC0 1.0 http://creativecommons.org/publicdomain/zero/1.0/
