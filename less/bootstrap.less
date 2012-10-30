@@ -19,12 +19,12 @@
 
 // Components: common
 //@import "sprites.less"; // Note: using font awesome icons rather than the bootstrap icons
-@import "font-awesome.less"; // Note: using font awesome icons rather than the bootstrap icons
-@import "font-awesome-ie7.less";
-@import "dropdowns.less";
-@import "wells.less";
-@import "component-animations.less";
-@import "close.less";
+//@import "font-awesome.less"; // Note: using font awesome icons rather than the bootstrap icons
+//@import "font-awesome-ie7.less";
+//@import "dropdowns.less";
+//@import "wells.less";
+//@import "component-animations.less";
+//@import "close.less";
 
 // Components: Buttons & Alerts
 @import "buttons.less";
@@ -32,24 +32,49 @@
 @import "alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
 
 // Components: Nav
-@import "navs.less";
-@import "navbar.less";
-@import "breadcrumbs.less";
-@import "pagination.less";
-@import "pager.less";
+//@import "navs.less";
+//@import "navbar.less";
+//@import "breadcrumbs.less";
+//@import "pagination.less";
+//@import "pager.less";
 
 // Components: Popovers
-@import "modals.less";
-@import "tooltip.less";
-@import "popovers.less";
+//@import "modals.less";
+//@import "tooltip.less";
+//@import "popovers.less";
 
 // Components: Misc
-@import "thumbnails.less";
-@import "labels-badges.less";
-@import "progress-bars.less";
-@import "accordion.less";
-@import "carousel.less";
-@import "hero-unit.less";
+//@import "thumbnails.less";
+//@import "labels-badges.less";
+//@import "progress-bars.less";
+//@import "accordion.less";
+//@import "carousel.less";
+//@import "hero-unit.less";
+
+
+
+// Custom: helpers
+@import "custom/helpers.less";
+
+// Custom: styles containing global overides
+@import "custom/site.less";
+
+// Custom: styles for the three main sections of the site
+@import "custom/header.less";
+@import "custom/body.less";
+@import "custom/footer.less"; 
+
+// Custom: styles for slideshow and sidebar areas
+@import "custom/slideshow.less";
+@import "custom/sidebar.less";
+
+// Custom: overide styles by page
+@import "custom/homePage.less";
+
+// Custom: debug
+@import "custom/debug.less";
+
+
 
 // Utility classes
 @import "utilities.less"; // Has to be last to override when necessary

@@ -1,0 +1,34 @@
+section.content {
+	background:#e91d2c;
+
+	& > .wrap {
+		background: url(../img/content_overlay.png);
+
+		& > .wrap {
+			background: url(../img/content_gradient.png) bottom repeat-x;
+
+			& > .container {
+				background: url(../img/content_what_is_this.png) bottom right no-repeat;
+				padding: 25px 0px;
+			}
+
+		}
+	}
+
+	.row > div {
+		position: relative;
+		z-index: 1;
+	}
+
+	.graphic {
+		position:relative;
+
+		img {
+			max-width: none;
+			position: absolute;
+			top: -110px;
+			right: 0px;
+		}
+	}
+
+}

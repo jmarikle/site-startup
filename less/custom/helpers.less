@@ -1,0 +1,13 @@
+.container-offset() {
+	width:
+		(@gridColumnWidth * @gridColumns) +
+		(@gridGutterWidth * @gridColumns);
+
+	& > .row {
+		margin-left: 0;
+
+		& > [class*="span"]:first-child {
+			margin-left: @gridGutterWidth / 2;
+		}
+	}
+}

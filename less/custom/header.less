@@ -1,0 +1,57 @@
+header {
+
+	background: #2B2A27;
+
+	.navigation {
+		background:#101010;
+		height:62px;
+
+		.logo {
+			position: absolute;
+			z-index: 1;
+		}
+
+		ul {
+			list-style-type:none;
+			float:right;
+			margin: 0px;
+			margin-right: -10px;
+
+			li {
+				float:left;
+				text-align:right;
+				.border-radius(1px);
+				margin:10px;
+
+
+				a {
+					font-family: @sansFontFamily;
+					font-size: 22px;
+					line-height: 21px;
+					text-transform: uppercase;
+					text-decoration: none;
+					display:block;
+
+					padding:5px;
+					text-shadow: 0px 1px 1px black;
+					.border-radius(1px);
+
+					div {
+						padding:6px 11px 3px;
+					}
+				}
+
+				&.active {
+					background: #2b2a27;
+					a div {
+						background:url(../img/nav_bg.gif);
+					}
+				}
+
+				&:hover {
+					background: #2b2a27;
+				}
+			}
+		}
+	}
+}
