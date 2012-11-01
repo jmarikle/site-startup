@@ -28,6 +28,7 @@ def filesum(path_to_file):
 
 
 def main(dir, action):
+    subprocess.call(action, shell=True)
     sums = checksum(dir)
     sum = hashlib.md5(''.join(sums)).hexdigest()
     while True:
