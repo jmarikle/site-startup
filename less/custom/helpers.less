@@ -50,6 +50,17 @@
       margin-left: @gridGutterWidth / 2;
     }
 
+    .spanXbackHalfFull (@index) when (@index > 0) {
+      (~".span@{index}backHalfFull") { .spanBackHalfFull(@index); }
+      .spanXbackHalfFull(@index - 1);
+    }
+    .spanXbackHalfFull (0) {}
+    
+    .spanBackHalfFull (@columns) {
+      width: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1)) + @gridGutterWidth;
+      margin-left: 0px !important;
+    }
+
     .spanXforwardHalfGutter (@index) when (@index > 0) {
       (~".span@{index}forwardHalfGutter") { .spanforwardHalfGutter(@index); }
       .spanXforwardHalfGutter(@index - 1);
@@ -64,6 +75,7 @@
     // generate spanXhalf
     .spanXandHalfGutter (@gridColumns);
     .spanXbackHalfGutter (@gridColumns);
+    .spanXbackHalfFull (@gridColumns);
     .spanXforwardHalfGutter (@gridColumns);
 
   }

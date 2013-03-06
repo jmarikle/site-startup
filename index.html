@@ -6,100 +6,60 @@
 <!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-    <meta charset="utf-8">
-
-
-    <!-- Use the .htaccess and remove these lines to avoid edge case issues.
-         More info: h5bp.com/i/378 -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-
-    <title></title>
-    <meta name="author" content="">
-    <meta name="description" content="">
-
-
-    <!-- Mobile viewport optimized: h5bp.com/viewport -->
-    <meta name="viewport" content="width=1024">
-
-
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
-    <link rel="stylesheet" href="css/style.css">
-
-
-    <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
-
-
-    <!-- All JavaScript at the bottom, except this Modernizr build.
-         Modernizr enables HTML5 elements & feature detects for optimal performance.
-         Create your own custom Modernizr build: www.modernizr.com/download/ -->
-    <script src="js/vendor/modernizr-2.5.3.min.js"></script>
-
-
-    <!-- typekit too needs to be loaded at the top to prevent flashing the wrong
-         font at page load. -->
-    <!--
-    <script type="text/javascript" src="//use.typekit.net/#######.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    -->
+  <meta charset="utf-8">
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/i/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <!-- Mobile viewport optimized: h5bp.com/viewport -->
+  <meta name="viewport" content="width=1024">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+  <link rel="shortcut icon" href="/site/images/favicon.ico">
+  <link rel="apple-touch-icon" href="/site/images/ipad_touch.png">
+  <link rel="stylesheet" href="/site/css/style.css">
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+  <!-- All JavaScript at the bottom, except this Modernizr build.
+       Modernizr enables HTML5 elements & feature detects for optimal performance.
+       Create your own custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="js/vendor/modernizr-2.5.3.min.js"></script>
+  <!-- typekit too needs to be loaded at the top to prevent flashing the wrong
+       font at page load. -->
+  <!--
+  <script type="text/javascript" src="//use.typekit.net/#######.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  -->
 </head>
-<body>
-    <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
-         chromium.org/developers/how-tos/chrome-frame-getting-started -->
-    <!--[if lt IE 7]><p class="chromeframe">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <body>
+      <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+           chromium.org/developers/how-tos/chrome-frame-getting-started -->
+      <!--[if lt IE 7]><p class="chromeframe">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
 
+      <!-- Add your site or application content here -->
 
 
+      <!-- JavaScript at the bottom for fast page loading: http://developer.yahoo.com/performance/rules.html#js_bottom -->
+      <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
 
-    <!-- Add your site or application content here -->
+      <!-- scripts concatenated and minified via build script -->
+      <script src="js/mootools.js"></script>
+      <script src="js/mootools-more.js"></script>
+      <script src="js/plugins.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/debug.js"></script> <!-- for markup debugging only -->
+      <!-- end scripts -->
 
-
-
-
-
-    <!-- JavaScript at the bottom for fast page loading: http://developer.yahoo.com/performance/rules.html#js_bottom -->
-    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
-
-    <!-- scripts concatenated and minified via build script -->
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    <!-- end scripts -->
-
-    <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
-    <script>
-        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
-         mathiasbynens.be/notes/async-analytics-snippet -->
-
-         
-    <!-- debug code -->
-    <div class="debug">
-        <div class="container">
-            <div class="row">
-              <div class="span1"><div>1</div></div>
-              <div class="span1"><div>2</div></div>
-              <div class="span1"><div>3</div></div>
-              <div class="span1"><div>4</div></div>
-              <div class="span1"><div>5</div></div>
-              <div class="span1"><div>6</div></div>
-              <div class="span1"><div>7</div></div>
-              <div class="span1"><div>8</div></div>
-              <div class="span1"><div>9</div></div>
-              <div class="span1"><div>10</div></div>
-              <div class="span1"><div>11</div></div>
-              <div class="span1"><div>12</div></div>
-              <div class="span1"><div>13</div></div>
-              <div class="span1"><div>14</div></div>
-              <div class="span1"><div>15</div></div>
-              <div class="span1"><div>16</div></div>
-            </div>
-        </div>
-    </div><!-- end debug code -->
-</body>
+      <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+      <script>
+          var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+          (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+          g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+          s.parentNode.insertBefore(g,s)}(document,'script'));
+      </script>
+           mathiasbynens.be/notes/async-analytics-snippet -->
+  </body>
 </html>
